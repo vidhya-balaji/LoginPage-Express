@@ -13,7 +13,7 @@ function App() {
     setpass(evt.target.value);
   }
   const handleData = () => {
-    const loginflag = axios.get(`http://localhost:5000/login?username=${username}&password=${pass}`)
+    const loginflag = axios.get(`https://expressbackend-5effn5acz-vidhya-balajis-projects.vercel.app/login?username=${username}&password=${pass}`)
     loginflag.then(function (data) {
       if (data.data === true) {
         navigate("/success")
